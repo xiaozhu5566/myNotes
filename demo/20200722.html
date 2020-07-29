@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    span {
+    display: inline-block; 
+    height: 1em;
+    line-height: 1;
+    text-align: left;
+    /* vertical-align: -.25em; */
+    /* overflow: hidden; */
+}
+span::before {
+    display: block;
+    content: '...\A..\A.';
+    white-space: pre-wrap;
+    animation: span 3s infinite step-start both;
+}
+/* @keyframes span {
+    33% { transform: translateY(-2em); }
+    66% { transform: translateY(-1em); }
+} */
+  </style>
+</head>
+<body>
+  正在加載<span>...</span>
+</body>
+</html>
